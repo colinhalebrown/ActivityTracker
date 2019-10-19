@@ -33,8 +33,11 @@ I started by testing all my components because after this is all put together I 
 
 LED Tests
 
+![Prototype Example](/images/LEDtest.gif)
+
 Button Tests
 
+![Prototype Example](/images/ButtonTest.gif)
 
 ## The Prototype
 
