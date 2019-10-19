@@ -1,13 +1,13 @@
 int timer;
 
+int buttonValue0;
 int buttonValue1;
-int buttonValue2;
 
 void setup() {
 
-  pinMode(14, OUTPUT);
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
 
   pinMode(4, OUTPUT);
   pinMode(3, OUTPUT);
@@ -19,29 +19,29 @@ void setup() {
 }
 
 void loop() {
+  buttonValue0 = analogRead(A0);
   buttonValue1 = analogRead(A1);
-  buttonValue2 = analogRead(A2);
 
-  if (buttonValue1 >= 5){
-    display(14, 101);
-    display(13, 10);
-    display(12, 101);
-  } else {
-    
-    display(14, 0);
-    display(13, 0);
-    display(12, 0);
-  }
-  
-  if (buttonValue2 >= 5) {
-    display(14, 10);
+  if (buttonValue0 >= 5){
     display(13, 101);
     display(12, 10);
+    display(11, 101);
   } else {
     
-    display(14, 0);
     display(13, 0);
     display(12, 0);
+    display(11, 0);
+  }
+  
+  if (buttonValue1 >= 5) {
+    display(13, 10);
+    display(12, 101);
+    display(11, 10);
+  } else {
+    
+    display(13, 0);
+    display(12, 0);
+    display(11, 0);
   }
   
 //    Serial.print("Button1:");Serial.print(buttonValue1);Serial.print(" Button2:");Serial.print(buttonValue2);Serial.println();

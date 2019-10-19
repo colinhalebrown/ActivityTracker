@@ -7,16 +7,16 @@ It is made of a 5x7 grid of LEDs and two buttons to program it. And to control a
 
 ## Bill of Materials
 
-| Item | Amount |
-| ---- | ---- |
-| 5x7cm Perfboard | 1 |
-| 3mm LED | 35 |
-| 100 ohm resistor | 5 |
-| 10mm Push button | 2 |
-| Random Resistor | 1 |
-| Broken Ethernet Cable | 1 |
-| Female Pin accepter (15 long) | 2 |
-| Arduino Nano | 1 |
+| Item | Amount | Link |
+| ---- | ---- | ---- |
+| 5x7cm Perfboard | 1 | ![Here] (https://www.addicore.com/5x7-Perfboard-p/ad253.htm) |
+| 3mm LED | 35 | ![Here] (https://www.amazon.com/gp/product/B07HDYFPSX/ref=ppx_yo_dt_b_asin_title_o00_s00) |
+| 100 ohm resistor | 5 | ![Here] (https://www.addicore.com/100-Ohm-1-4W-Metal-Film-Precision-Resistor-p/r26100s.htm) |
+| 6mm Push button | 2 | ![Here] (https://www.addicore.com/Small-6x6x5mm-Tact-Mini-Push-Button-Switch-p/140.htm) |
+| Random Resistor | 1 | Garbage |
+| Broken Ethernet Cable | 1 | Garbage |
+| Female Pin accepter (15 long) | 2 | Garbage |
+| Arduino Nano | 1 | ![Here] (https://www.addicore.com/Nano-3p0-p/239.htm) |
 
 ## Electronics Diagram
 
@@ -27,6 +27,14 @@ This was a design decision because having hte ability to accidently press both b
 There will be no need to press two at once so I will save the resistor. 
 
 ## Assembly
+
+I started by testing all my components because after this is all put together I dont want to have to take it appart. 
+(Free/ super cheap elecetronics are not always the highest quality. *Crazy how that happens*)
+
+LED Tests
+
+Button Tests
+
 
 ## The Prototype
 
