@@ -5,7 +5,7 @@ The concept is that it sits on your desk and you can select a light to tun it on
 
 It is made of a 5x7 grid of LEDs and two buttons to program it. And to control all this stuff I have attached an arduino nano.
 
-Bill of Materials
+## Bill of Materials
 
 | Item | Amount |
 | ---- | ---- |
@@ -15,14 +15,20 @@ Bill of Materials
 | 10mm Push button | 2 |
 | Random Resistor | 1 |
 | Broken Ethernet Cable | 1 |
+| Female Pin accepter (15 long) | 2 |
+| Arduino Nano | 1 |
 
-Electronics Diagram
+## Electronics Diagram
+
+![Prototype Diagram](/images/MatrixDiagram.png)
 
 I have two buttons (one at A0 and another at A1) however the way they are wired only one button can be pressed at a time. 
 This was a design decision because having hte ability to accidently press both buttons at once made for interesting issues. 
 There will be no need to press two at once so I will save the resistor. 
 
-The Prototype
+## Assembly
+
+## The Prototype
 
 I build a small 3x3 matrix with two buttons to test the code and matrix logic.
 
@@ -30,5 +36,5 @@ I build a small 3x3 matrix with two buttons to test the code and matrix logic.
 
 Diagram
 
-![Prototype Diagram](/images/MatrixPrototypeWireing.png)
+![Prototype Diagram](/images/PrototypeDiagram.png)
 
