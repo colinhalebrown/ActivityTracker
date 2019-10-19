@@ -16,3 +16,5 @@ The Prototype
 I build a small 3x3 matrix with two buttons to test the code and matrix logic.
 
 Diagram
+
+![Prototype Diagram] (https://github.com/colinhalebrown/ActivityTracker/blob/master/images/MatrixPrototype.png)
