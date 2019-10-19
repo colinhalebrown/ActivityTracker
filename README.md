@@ -23,9 +23,10 @@ This was a design decision because having hte ability to accidently press both b
 There will be no need to press two at once so I will save the resistor. 
 
 The Prototype
+
 I build a small 3x3 matrix with two buttons to test the code and matrix logic.
 
-![Prototype Example](/images/Prototype.png)
+![Prototype Example](/images/Prototype.gif)
 
 Diagram
 
