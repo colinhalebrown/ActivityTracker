@@ -1,17 +1,17 @@
 int timer;
 
-int buttonValue0;
 int buttonValue1;
+int buttonValue2;
 
 void setup() {
 
-  pinMode(16, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(8, OUTPUT);
+  pinMode(14, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
 
-  pinMode(7, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(5, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(2, OUTPUT);
   
   timer = 2;
   
@@ -19,29 +19,29 @@ void setup() {
 }
 
 void loop() {
-  buttonValue0 = analogRead(A0);
   buttonValue1 = analogRead(A1);
+  buttonValue2 = analogRead(A2);
 
   if (buttonValue1 >= 5){
-    display(8, 101);
-    display(9, 10);
-    display(16, 101);
+    display(14, 101);
+    display(13, 10);
+    display(12, 101);
   } else {
     
-    display(8, 0);
-    display(9, 0);
-    display(16, 0);
+    display(14, 0);
+    display(13, 0);
+    display(12, 0);
   }
   
-  if (buttonValue0 >= 5) {
-    display(8, 10);
-    display(9, 101);
-    display(16, 10);
+  if (buttonValue2 >= 5) {
+    display(14, 10);
+    display(13, 101);
+    display(12, 10);
   } else {
     
-    display(8, 0);
-    display(9, 0);
-    display(16, 0);
+    display(14, 0);
+    display(13, 0);
+    display(12, 0);
   }
   
 //    Serial.print("Button1:");Serial.print(buttonValue1);Serial.print(" Button2:");Serial.print(buttonValue2);Serial.println();
@@ -53,28 +53,28 @@ void display(int row, long rowVal) {
   digitalWrite(row, HIGH);
 //  Serial.print("1");
   if (rowVal >= 100) {
-    digitalWrite(7, LOW);
+    digitalWrite(2, LOW);
     rowVal = rowVal - 100;
   } else {
-    digitalWrite(7, HIGH); 
+    digitalWrite(2, HIGH); 
   }
   
 //    Serial.print("Row:");Serial.print(row);Serial.print(" Value:");Serial.print(rowVal);Serial.println();
 //  Serial.print("2");
   if (rowVal >= 10) {
-    digitalWrite(6, LOW);
+    digitalWrite(3, LOW);
     rowVal = rowVal - 10;
   } else {
-    digitalWrite(6, HIGH); 
+    digitalWrite(3, HIGH); 
   }
   
 //    Serial.print("Row:");Serial.print(row);Serial.print(" Value:");Serial.print(rowVal);Serial.println();
 //  Serial.print("3");
   if (rowVal >= 1) {
-    digitalWrite(5, LOW);
+    digitalWrite(4, LOW);
     rowVal = rowVal - 1;
   } else {
-    digitalWrite(5, HIGH); 
+    digitalWrite(4, HIGH); 
   }
   
 //    Serial.print("Done!");
