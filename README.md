@@ -17,5 +17,5 @@ I build a small 3x3 matrix with two buttons to test the code and matrix logic.
 
 Diagram
 
-![Prototype Diagram] (/images/MatrixPrototype.png)
+![Prototype Diagram](/images/MatrixPrototype.png)
 
