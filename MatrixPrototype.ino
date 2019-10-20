@@ -1,7 +1,7 @@
 // 3x3 LED Matrix Arduino Script
 #define PIN_TOTAL 6
 
-// variable wait controls the delay between run display() function call 
+// variable timer controls the delay between run display() function call 
 int timer = 2;
 // Shouldn't these be booleans?
 int buttonValue0;
