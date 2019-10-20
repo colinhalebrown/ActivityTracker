@@ -1,16 +1,16 @@
 // 3x3 LED Matrix Arduino Script
-#define PINS 6
+#define PIN_TOTAL 6
 
 // variable wait controls the delay between run display() function call 
-int wait = 2;
+int timer = 2;
 // Shouldn't these be booleans?
 int buttonValue0;
 int buttonValue1;
 
 void setup() {
   // Setup output pins
-  int pinOuts[PINS] = {13, 12, 11, 4, 3, 2};
-  for (int i=0; i < PINS; i++){
+  int pinOuts[] = {13, 12, 11, 4, 3, 2};
+  for (int i=0; i < PIN_TOTAL; i++){
     pinMode(pinOuts[i], OUTPUT);
   }
   // Serial print for debugging purposes
@@ -80,6 +80,6 @@ void display(int row, byte rowVal) {
   //    Serial.print("Done!");
   //    Serial.print("Row:");Serial.print(row);Serial.print(" Value:");Serial.print(rowVal);Serial.println();
    
-  delay(wait);
+  delay(timer);
   digitalWrite(row, LOW);
 }
