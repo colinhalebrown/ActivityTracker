@@ -1,3 +1,6 @@
+# THIS PROJECT IS ARCHIVED
+It was put together for a class project. 
+
 # Activity Tracker
 
 This is a project to make a desktop activity tracker to follow a goal. 
